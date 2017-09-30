@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:CSMaze"
         mc:Ignorable="d"
         Title="MainWindow" Height="900" Width="900">
-    <Grid>
-		<StackPanel Orientation="Vertical">
+    <Grid Name="mainGrid">
+		<!--<StackPanel Orientation="Vertical">
 			<StackPanel Orientation="Horizontal">
 				<Button	HorizontalAlignment="Left" 
 						VerticalAlignment="Top" 
@@ -311,6 +311,6 @@
 
 			</StackPanel>
 
-		</StackPanel>
+		</StackPanel>-->
     </Grid>
 </Window>
