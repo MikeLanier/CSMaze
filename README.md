@@ -4,7 +4,8 @@ are defined at  https://en.wikipedia.org/wiki/Maze_generation_algorithm and  htt
 work left in JMaze. I'll do my best the two in sync.  My ultimate goal is to port this to JavaScript using the AngularJS and Vue frameworks.
 
 ### 10/1/2017
-* ~~add controls for building the maze~~
+* ~~convert to WinRT from WPF.  Graphics more in line with what I'm looking for~~
+* add controls for building the maze
 * add event handlers for the controls
 * create the display panel
 * build the maze grid structures and draw it
