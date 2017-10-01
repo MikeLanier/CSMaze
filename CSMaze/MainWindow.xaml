@@ -5,312 +5,382 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSMaze"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="900">
+        Title="MainWindow" Height="700" Width="1200">
     <Grid Name="mainGrid">
-		<!--<StackPanel Orientation="Vertical">
-			<StackPanel Orientation="Horizontal">
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60"
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Load"/>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="300"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid Name="displayPanel" Grid.Column="1" Background="LightGray"/>
+		<Grid Name="controlPanel" Grid.Column="0" Background="White">
+			<StackPanel Orientation="Vertical" Grid.Column="0">
+				<Border BorderBrush="Black" BorderThickness="1">
+					<StackPanel Orientation="Vertical">
+						<StackPanel Orientation="Horizontal">
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60"
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Load"/>
 
-				<TextBox	Width="150"
-							Height="20"
-							TextAlignment="Left"
-							Margin="5,5,5,5"
-							Text="filename"/>
+							<TextBox	Width="150"
+										Height="20"
+										TextAlignment="Left"
+										Margin="5,5,5,5"
+										Text="filename"/>
 
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="20" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="?"/>
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+						
+						<StackPanel Orientation="Horizontal">
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Save"/>
 
+							<TextBox	Width="150"
+										Height="20"
+										TextAlignment="Left"
+										Margin="5,5,5,5"
+										Text="filename"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+						
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Name"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<TextBox	Width="150"
+										Height="20"
+										TextAlignment="Left"
+										Margin="5,5,5,5"
+										Text="filename"/>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+
+				<Border BorderBrush="Black" BorderThickness="1">
+					<StackPanel Orientation="Vertical">
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Size"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<TextBox	Width="30"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="512"/>
+
+							<TextBlock	Text="x"
+										Margin="5,5,5,5"
+										Width="10"
+										Height="20"/>
+
+							<TextBox	Width="30"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="10"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Cell Size"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<TextBox	Width="30"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="512"/>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+
+				<Border BorderBrush="Black" BorderThickness="1">
+					<StackPanel Orientation="Vertical">
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Algorithm"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<ComboBox	Width="150"
+										Height="20"
+										Margin="5,5,5,5"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Start Cell"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<TextBox	Width="60"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="512"/>
+
+							<TextBlock	Text="x"
+										Margin="5,5,5,5"
+										Width="10"
+										Height="20"/>
+
+							<TextBox	Width="60"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="10"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Entrance"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<ComboBox	Width="60"
+										Height="20"
+										Margin="5,5,5,5"
+										Text="512"/>
+
+							<TextBlock	Text="x"
+										Margin="5,5,5,5"
+										Width="10"
+										Height="20"/>
+
+							<ComboBox	Width="60"
+										Height="20"
+										Margin="5,5,5,5"
+										Text="10"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Exit"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<ComboBox	Width="60"
+										Height="20"
+										Margin="5,5,5,5"
+										Text="512"/>
+
+							<TextBlock	Text="x"
+										Margin="5,5,5,5"
+										Width="10"
+										Height="20"/>
+
+							<ComboBox	Width="60"
+										Height="20"
+										Margin="5,5,5,5"
+										Text="10"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+
+				<Border BorderBrush="Black" BorderThickness="1">
+					<StackPanel Orientation="Vertical">
+						<StackPanel Orientation="Horizontal">
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Create"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Animate Create"/>
+						</StackPanel>
+						
+						<StackPanel Orientation="Horizontal">
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Solve"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Print"/>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+
+				<Border BorderBrush="Black" BorderThickness="1">
+					<StackPanel Orientation="Horizontal">
+						<TextBlock	Text=""
+									Margin="5,5,5,5"
+									Width="60"
+									Height="20"/>
+
+						<CheckBox	Width="80"
+									Height="20"
+									Margin="5,5,5,5"
+									Content="2D Display"/>
+
+						<CheckBox	Width="80"
+									Height="20"
+									Margin="5,5,5,5"
+									Content="3D Display"/>
+					</StackPanel>
+				</Border>
+
+				<Border BorderBrush="Black" BorderThickness="1">
+					<StackPanel Orientation="Vertical">
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Create a room"
+										Margin="5,5,5,5"
+										FontWeight="Bold"
+										Width="90"
+										Height="20"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Origin"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<TextBox	Width="60"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="512"/>
+
+							<TextBlock	Text="x"
+										Margin="5,5,5,5"
+										Width="10"
+										Height="20"/>
+
+							<TextBox	Width="60"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="10"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<TextBlock	Text="Size"
+										Margin="5,5,5,5"
+										Width="60"
+										Height="20"/>
+
+							<TextBox	Width="60"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="512"/>
+
+							<TextBlock	Text="x"
+										Margin="5,5,5,5"
+										Width="10"
+										Height="20"/>
+
+							<TextBox	Width="60"
+										Height="20"
+										TextAlignment="Center"
+										Margin="5,5,5,5"
+										Text="10"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="20" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="?"/>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal">
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Create"/>
+
+							<Button	HorizontalAlignment="Left" 
+									VerticalAlignment="Top" 
+									Width="60" 
+									Height="20"
+									Margin="5,5,5,5"
+									BorderBrush="Black"
+									Content="Create All"/>
+						</StackPanel>
+					</StackPanel>
+				</Border>
 			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Save"/>
-
-				<TextBox	Width="150"
-							Height="20"
-							TextAlignment="Left"
-							Margin="5,5,5,5"
-							Text="filename"/>
-
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="20" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="?"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Name"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<TextBox	Width="150"
-							Height="20"
-							TextAlignment="Left"
-							Margin="5,5,5,5"
-							Text="filename"/>
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Size"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<TextBox	Width="30"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="512"/>
-				
-				<TextBlock	Text="x"
-							Margin="5,5,5,5"
-							Width="10"
-							Height="20"/>
-
-				<TextBox	Width="30"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="10"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Cell Size"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<TextBox	Width="30"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="512"/>
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Algorithm"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<ComboBox	Width="150"
-							Height="20"
-							Margin="5,5,5,5"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Start Cell"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<TextBox	Width="60"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="512"/>
-
-				<TextBlock	Text="x"
-							Margin="5,5,5,5"
-							Width="10"
-							Height="20"/>
-
-				<TextBox	Width="60"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="10"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Entrance"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<ComboBox	Width="60"
-							Height="20"
-							Margin="5,5,5,5"
-							Text="512"/>
-
-				<TextBlock	Text="x"
-							Margin="5,5,5,5"
-							Width="10"
-							Height="20"/>
-
-				<ComboBox	Width="60"
-							Height="20"
-							Margin="5,5,5,5"
-							Text="10"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<StackPanel Orientation="Horizontal">
-					<TextBlock	Text="Exit"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-					<ComboBox	Width="60"
-							Height="20"
-							Margin="5,5,5,5"
-							Text="512"/>
-
-					<TextBlock	Text="x"
-							Margin="5,5,5,5"
-							Width="10"
-							Height="20"/>
-
-					<ComboBox	Width="60"
-							Height="20"
-							Margin="5,5,5,5"
-							Text="10"/>
-
-				</StackPanel>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Create"/>
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Animate Create"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Solve"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Print"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text=""
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-				<CheckBox	Width="80"
-							Height="20"
-							Margin="5,5,5,5"
-							Content="2D Display"/>
-				<CheckBox	Width="80"
-							Height="20"
-							Margin="5,5,5,5"
-							Content="3D Display"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Create a room"
-							Margin="5,5,5,5"
-							Width="90"
-							Height="20"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Origin"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<TextBox	Width="60"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="512"/>
-
-				<TextBlock	Text="x"
-							Margin="5,5,5,5"
-							Width="10"
-							Height="20"/>
-
-				<TextBox	Width="60"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="10"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<TextBlock	Text="Size"
-							Margin="5,5,5,5"
-							Width="60"
-							Height="20"/>
-
-				<TextBox	Width="60"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="512"/>
-
-				<TextBlock	Text="x"
-							Margin="5,5,5,5"
-							Width="10"
-							Height="20"/>
-
-				<TextBox	Width="60"
-							Height="20"
-							TextAlignment="Center"
-							Margin="5,5,5,5"
-							Text="10"/>
-
-			</StackPanel>
-			<StackPanel Orientation="Horizontal">
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Create"/>
-				<Button	HorizontalAlignment="Left" 
-						VerticalAlignment="Top" 
-						Width="60" 
-						Height="20"
-						Margin="5,5,5,5"
-						BorderBrush="Black"
-						Content="Create All"/>
-
-			</StackPanel>
-
-		</StackPanel>-->
-    </Grid>
+		</Grid>
+	</Grid>
 </Window>

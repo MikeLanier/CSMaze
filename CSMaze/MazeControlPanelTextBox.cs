@@ -15,5 +15,14 @@ namespace CSMaze
 			BorderBrush = System.Windows.Media.Brushes.Black;
 			Margin = new System.Windows.Thickness(5, 5, 5, 5);
 		}
+
+		public MazeControlPanelTextBox(int value, double width, double height)
+		{
+			Width = width;
+			Height = height;
+			Text = value.ToString();
+			BorderBrush = System.Windows.Media.Brushes.Black;
+			Margin = new System.Windows.Thickness(5, 5, 5, 5);
+		}
 	}
 }
