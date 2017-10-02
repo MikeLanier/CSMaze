@@ -52,13 +52,43 @@
     <Compile Include="ControlPanelAlgorithms.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ControlPanelCellSize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelCreateRoom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelEntrance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelExit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ControlPanelLoad.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ControlPanelMazes.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ControlPanelMazeSize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ControlPanelSave.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelSolve.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelStartCell.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MainFrm.cs">

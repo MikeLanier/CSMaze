@@ -35,7 +35,37 @@ namespace CSMaze
 			Controls.Add(new ControlPanelMazes(x, y, width, height, buffer));
 			y = y + height + buffer;
 
+			Controls.Add(new ControlPanelMazeSize(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelCellSize(x, y, width, height, buffer));
+			y = y + height + buffer;
+
 			Controls.Add(new ControlPanelAlgorithms(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelStartCell(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelEntrance(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelExit(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelCreate(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelSolve(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelPrint(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelDisplay(x, y, width, height, buffer));
+			y = y + height + buffer;
+
+			Controls.Add(new ControlPanelCreateRoom(x, y, width, height, buffer));
 			y = y + height + buffer;
 
 		}
