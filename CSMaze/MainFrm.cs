@@ -12,9 +12,16 @@ namespace CSMaze
 {
 	public partial class MainFrm : Form
 	{
+		ControlPanel controlPanel = null;
+
 		public MainFrm()
 		{
+			System.Console.WriteLine("MainFrm");
 			InitializeComponent();
+
+			controlPanel = new CSMaze.ControlPanel();
+			Controls.Add(controlPanel);
+
 		}
 
 		protected override void OnPaint(PaintEventArgs e)

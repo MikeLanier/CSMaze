@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelAlgorithms.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelLoad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelMazes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlPanelSave.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
