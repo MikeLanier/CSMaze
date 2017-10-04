@@ -28,7 +28,7 @@ namespace CSMaze
 			x = x + 60 + buffer;
 
 			TextBox tbMazeSizeX = new TextBox();
-			tbMazeSizeX.Text = "512";
+			tbMazeSizeX.Text = MazeGlobal.cellSize.ToString();
 			tbMazeSizeX.Width = 60;
 			tbMazeSizeX.Height = 20;
 			tbMazeSizeX.Location = new Point(x, y);
