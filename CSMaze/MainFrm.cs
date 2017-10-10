@@ -23,6 +23,7 @@ namespace CSMaze
 			MazeGlobal.displayPanel = new CSMaze.DisplayPanel();
 			Controls.Add(MazeGlobal.displayPanel);
 
+			this.DoubleBuffered = true;
 		}
 
 		protected override void OnPaint(PaintEventArgs e)
