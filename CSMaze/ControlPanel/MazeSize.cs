@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CSMaze
+namespace CSMaze. ControlPanel
 {
-	class ControlPanelMazeSize : Panel
+	class MazeSize : Panel
 	{
-		public ControlPanelMazeSize(int xOrigin, int yOrigin, int width, int height, int buffer)
+		public MazeSize(int xOrigin, int yOrigin, int width, int height, int buffer)
 		{
 			Width = width;
 			Height = height;

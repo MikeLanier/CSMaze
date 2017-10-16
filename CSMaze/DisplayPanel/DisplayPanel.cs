@@ -2,11 +2,11 @@
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace CSMaze
+namespace CSMaze.DisplayPanel
 {
 	class DisplayPanel : Panel
 	{
-		private Dictionary<int, MazeWall> walls = new Dictionary<int, MazeWall>();
+		private Dictionary<int, Maze.Wall> walls = new Dictionary<int, Maze.Wall>();
 
 		public DisplayPanel()
 		{
@@ -15,12 +15,12 @@ namespace CSMaze
 				{
 					if (x != 10)
 					{
-						MazeWall wall = new MazeWall(x, y, true);
+						Maze.Wall wall = new Maze.Wall(x, y, true);
 						walls.Add(wall.ID(), wall);
 					}
 					if (y != 10)
 					{
-						MazeWall wall = new MazeWall(x, y, false);
+						Maze.Wall wall = new Maze.Wall(x, y, false);
 						walls.Add(wall.ID(), wall);
 					}
 				}
@@ -28,7 +28,7 @@ namespace CSMaze
 
 		public void Update(Graphics g)
 		{
-			foreach (MazeWall wall in walls.Values)
+			foreach (Maze.Wall wall in walls.Values)
 			{
 				wall.draw(g, 350, 50, GlobalData.cellSize);
 			}

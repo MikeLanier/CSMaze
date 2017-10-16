@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace CSMaze
+namespace CSMaze.Maze
 {
-	class MazeWall
+	class Wall
 	{
 		private int xOrigin = 0;
 		private int yOrigin = 0;
@@ -36,7 +36,7 @@ namespace CSMaze
 			return door;
 		}
 
-		public MazeWall(int _xOrigin, int _yOrigin, bool _horizontal)
+		public Wall(int _xOrigin, int _yOrigin, bool _horizontal)
 		{
 			xOrigin = _xOrigin;
 			yOrigin = _yOrigin;

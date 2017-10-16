@@ -17,10 +17,10 @@ namespace CSMaze
 			System.Console.WriteLine("MainFrm");
 			InitializeComponent();
 
-			GlobalData.controlPanel = new CSMaze.ControlPanel();
+			GlobalData.controlPanel = new CSMaze.ControlPanel.ControlPanel();
 			Controls.Add(GlobalData.controlPanel);
 
-			GlobalData.displayPanel = new CSMaze.DisplayPanel();
+			GlobalData.displayPanel = new CSMaze.DisplayPanel.DisplayPanel();
 			Controls.Add(GlobalData.displayPanel);
 
 			this.DoubleBuffered = true;

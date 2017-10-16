@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CSMaze
+namespace CSMaze. ControlPanel
 {
-	class ControlPanelCreateRoom : Panel
+	class CreateRoom : Panel
 	{
-		public ControlPanelCreateRoom(int xOrigin, int yOrigin, int width, int height, int buffer)
+		public CreateRoom(int xOrigin, int yOrigin, int width, int height, int buffer)
 		{
 			Width = width;
 			Height = height * 4;

@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CSMaze
+namespace CSMaze. ControlPanel
 {
-	class ControlPanelAlgorithms: Panel
+	class Mazes: Panel
 	{
-		public ControlPanelAlgorithms(int xOrigin, int yOrigin, int width, int height, int buffer)
+		public Mazes(int xOrigin, int yOrigin, int width, int height, int buffer)
 		{
 			Width = width;
 			Height = height;
@@ -20,19 +20,19 @@ namespace CSMaze
 			int x = 0;
 
 			Label lblLabel = new Label();
-			lblLabel.Text = "Algorithms";
+			lblLabel.Text = "Mazes";
 			lblLabel.Width = 60;
 			lblLabel.Height = 20;
 			lblLabel.Location = new Point(x, y);
 			Controls.Add(lblLabel);
 			x = x + 60 + buffer;
 
-			ComboBox cbAlgorithms = new ComboBox();
-			cbAlgorithms.Text = "algorithm";
-			cbAlgorithms.Width = 150;
-			cbAlgorithms.Height = 20;
-			cbAlgorithms.Location = new Point(x, y);
-			Controls.Add(cbAlgorithms);
+			ComboBox cbMazes = new ComboBox();
+			cbMazes.Text = "filename";
+			cbMazes.Width = 150;
+			cbMazes.Height = 20;
+			cbMazes.Location = new Point(x, y);
+			Controls.Add(cbMazes);
 			x = x + 150 + buffer;
 		}
 	}

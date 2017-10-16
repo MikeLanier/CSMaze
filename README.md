@@ -5,6 +5,7 @@ work left in JMaze. I'll do my best the two in sync.  My ultimate goal is to por
 
 ### 10/16/2017
 * ~~moved the ControlPanel, DisplayPanel and Maze code into their own sub-folder~~
+* add spacers between controls and re-arrange for content
 * add event handlers for the controls
 * parameterize values which define the size of the controls
 * create a template for the buttons

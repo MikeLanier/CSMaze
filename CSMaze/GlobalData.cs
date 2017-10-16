@@ -15,8 +15,8 @@ namespace CSMaze
 		public static int controlPanelWidth = 300;
 		public static int controlPanelHeight = 1500;
 
-		public static ControlPanel controlPanel = null;
-		public static DisplayPanel displayPanel = null;
+		public static ControlPanel.ControlPanel controlPanel = null;
+		public static DisplayPanel.DisplayPanel displayPanel = null;
 
 		public GlobalData()
 		{

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace CSMaze
+namespace CSMaze.ControlPanel
 {
 	class ControlPanel: Panel
 	{
@@ -20,46 +20,46 @@ namespace CSMaze
 			int width = GlobalData.controlPanelWidth;
 			int height = 25;
 
-			Controls.Add(new ControlPanelLoad(x, y, width, height, buffer));
+			Controls.Add(new LoadMazes(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelSave(x, y, width, height, buffer));
+			Controls.Add(new SaveMazes(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelMazes(x, y, width, height, buffer));
+			Controls.Add(new Mazes(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelMazeSize(x, y, width, height, buffer));
+			Controls.Add(new MazeSize(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelCellSize(x, y, width, height, buffer));
+			Controls.Add(new CellSize (x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelAlgorithms(x, y, width, height, buffer));
+			Controls.Add(new Algorithms(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelStartCell(x, y, width, height, buffer));
+			Controls.Add(new StartCell(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelEntrance(x, y, width, height, buffer));
+			Controls.Add(new Entrance(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelExit(x, y, width, height, buffer));
+			Controls.Add(new Exit(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelCreate(x, y, width, height, buffer));
+			Controls.Add(new Create(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelSolve(x, y, width, height, buffer));
+			Controls.Add(new Solve(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelPrint(x, y, width, height, buffer));
+			Controls.Add(new Print(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelDisplay(x, y, width, height, buffer));
+			Controls.Add(new Display(x, y, width, height, buffer));
 			y = y + height + buffer;
 
-			Controls.Add(new ControlPanelCreateRoom(x, y, width, height, buffer));
+			Controls.Add(new CreateRoom(x, y, width, height, buffer));
 			y = y + height + buffer;
 
 		}

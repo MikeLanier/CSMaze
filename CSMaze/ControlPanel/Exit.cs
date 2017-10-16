@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CSMaze
+namespace CSMaze. ControlPanel
 {
-	class ControlPanelExit : Panel
+	class Exit : Panel
 	{
-		public ControlPanelExit(int xOrigin, int yOrigin, int width, int height, int buffer)
+		public Exit(int xOrigin, int yOrigin, int width, int height, int buffer)
 		{
 			Width = width;
 			Height = height;

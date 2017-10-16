@@ -49,46 +49,46 @@
     <Compile Include="ControlPanel\ControlPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelAlgorithms.cs">
+    <Compile Include="ControlPanel\Algorithms.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelCellSize.cs">
+    <Compile Include="ControlPanel\CellSize.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelCreate.cs">
+    <Compile Include="ControlPanel\Create.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelCreateRoom.cs">
+    <Compile Include="ControlPanel\CreateRoom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelDisplay.cs">
+    <Compile Include="ControlPanel\Display.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelEntrance.cs">
+    <Compile Include="ControlPanel\Entrance.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelExit.cs">
+    <Compile Include="ControlPanel\Exit.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelLoad.cs">
+    <Compile Include="ControlPanel\LoadMazes.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelMazes.cs">
+    <Compile Include="ControlPanel\Mazes.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelMazeSize.cs">
+    <Compile Include="ControlPanel\MazeSize.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelPrint.cs">
+    <Compile Include="ControlPanel\Print.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelSave.cs">
+    <Compile Include="ControlPanel\SaveMazes.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelSolve.cs">
+    <Compile Include="ControlPanel\Solve.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanel\ControlPanelStartCell.cs">
+    <Compile Include="ControlPanel\StartCell.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DisplayPanel\DisplayPanel.cs">
@@ -101,7 +101,8 @@
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalData.cs" />
-    <Compile Include="Maze\MazeWall.cs" />
+    <Compile Include="Maze\Cell.cs" />
+    <Compile Include="Maze\Wall.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainFrm.resx">
