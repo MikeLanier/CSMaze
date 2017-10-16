@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace CSMaze.Maze
 {
-	class Wall
+	public class Wall
 	{
 		private int xOrigin = 0;
 		private int yOrigin = 0;

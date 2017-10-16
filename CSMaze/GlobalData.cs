@@ -18,6 +18,9 @@ namespace CSMaze
 		public static ControlPanel.ControlPanel controlPanel = null;
 		public static DisplayPanel.DisplayPanel displayPanel = null;
 
+		public static Dictionary<int, Maze.Wall> walls = new Dictionary<int, Maze.Wall>();
+		public static Dictionary<int, Maze.Cell> cells = new Dictionary<int, Maze.Cell>();
+
 		public GlobalData()
 		{
 

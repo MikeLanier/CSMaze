@@ -102,6 +102,7 @@
     </Compile>
     <Compile Include="GlobalData.cs" />
     <Compile Include="Maze\Cell.cs" />
+    <Compile Include="Maze\Math.cs" />
     <Compile Include="Maze\Wall.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
