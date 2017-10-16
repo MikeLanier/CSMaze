@@ -3,9 +3,11 @@ This will be a version of JMaze ported to C#. As stated in the JMaze description
 are defined at  https://en.wikipedia.org/wiki/Maze_generation_algorithm and  http://www.astrolog.org/labyrnth/algrithm.htm .  I still have some
 work left in JMaze. I'll do my best the two in sync.  My ultimate goal is to port this to JavaScript using the AngularJS and Vue frameworks.
 
-### 10/4/2017
-* update of the maze grid is slow.  IF can't find a way to delay update may need to go with DirectX, SmartDX
+### 10/15/2017
 * add event handlers for the controls
+
+### 10/4/2017
+* ~~update of the maze grid is slow.  IF can't find a way to delay update may need to go with DirectX, SmartDX~~
 * ~~create the display panel~~
 * ~~build the maze grid structures and draw it~~
 ### 10/3/2017
