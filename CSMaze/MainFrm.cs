@@ -17,11 +17,11 @@ namespace CSMaze
 			System.Console.WriteLine("MainFrm");
 			InitializeComponent();
 
-			MazeGlobal.controlPanel = new CSMaze.ControlPanel();
-			Controls.Add(MazeGlobal.controlPanel);
+			GlobalData.controlPanel = new CSMaze.ControlPanel();
+			Controls.Add(GlobalData.controlPanel);
 
-			MazeGlobal.displayPanel = new CSMaze.DisplayPanel();
-			Controls.Add(MazeGlobal.displayPanel);
+			GlobalData.displayPanel = new CSMaze.DisplayPanel();
+			Controls.Add(GlobalData.displayPanel);
 
 			this.DoubleBuffered = true;
 		}
@@ -31,7 +31,7 @@ namespace CSMaze
 			base.OnPaint(e);
 			Graphics g = e.Graphics;
 
-			MazeGlobal.displayPanel.Update(g);
+			GlobalData.displayPanel.Update(g);
 		}
 	}
 }

@@ -28,7 +28,7 @@ namespace CSMaze
 			x = x + 60 + buffer;
 
 			TextBox tbMazeSizeX = new TextBox();
-			tbMazeSizeX.Text = MazeGlobal.mazeSizeX.ToString();
+			tbMazeSizeX.Text = GlobalData.mazeSizeX.ToString();
 			tbMazeSizeX.Width = 60;
 			tbMazeSizeX.Height = 20;
 			tbMazeSizeX.Location = new Point(x, y);
@@ -44,7 +44,7 @@ namespace CSMaze
 			x = x + 20 + buffer;
 
 			TextBox tbMazeSizeY = new TextBox();
-			tbMazeSizeY.Text = MazeGlobal.mazeSizeY.ToString(); ;
+			tbMazeSizeY.Text = GlobalData.mazeSizeY.ToString(); ;
 			tbMazeSizeY.Width = 60;
 			tbMazeSizeY.Height = 20;
 			tbMazeSizeY.Location = new Point(x, y);

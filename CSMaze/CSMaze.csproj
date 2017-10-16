@@ -46,52 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlPanel.cs">
+    <Compile Include="ControlPanel\ControlPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelAlgorithms.cs">
+    <Compile Include="ControlPanel\ControlPanelAlgorithms.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelCellSize.cs">
+    <Compile Include="ControlPanel\ControlPanelCellSize.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelCreate.cs">
+    <Compile Include="ControlPanel\ControlPanelCreate.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelCreateRoom.cs">
+    <Compile Include="ControlPanel\ControlPanelCreateRoom.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelDisplay.cs">
+    <Compile Include="ControlPanel\ControlPanelDisplay.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelEntrance.cs">
+    <Compile Include="ControlPanel\ControlPanelEntrance.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelExit.cs">
+    <Compile Include="ControlPanel\ControlPanelExit.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelLoad.cs">
+    <Compile Include="ControlPanel\ControlPanelLoad.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelMazes.cs">
+    <Compile Include="ControlPanel\ControlPanelMazes.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelMazeSize.cs">
+    <Compile Include="ControlPanel\ControlPanelMazeSize.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelPrint.cs">
+    <Compile Include="ControlPanel\ControlPanelPrint.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelSave.cs">
+    <Compile Include="ControlPanel\ControlPanelSave.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelSolve.cs">
+    <Compile Include="ControlPanel\ControlPanelSolve.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ControlPanelStartCell.cs">
+    <Compile Include="ControlPanel\ControlPanelStartCell.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DisplayPanel.cs">
+    <Compile Include="DisplayPanel\DisplayPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MainFrm.cs">
@@ -100,8 +100,8 @@
     <Compile Include="MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MazeGlobal.cs" />
-    <Compile Include="MazeWall.cs" />
+    <Compile Include="GlobalData.cs" />
+    <Compile Include="Maze\MazeWall.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainFrm.resx">
@@ -129,6 +129,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

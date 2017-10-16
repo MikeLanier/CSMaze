@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSMaze
 {
-	class MazeGlobal
+	class GlobalData
 	{
 		public static int mazeSizeX = 10;
 		public static int mazeSizeY = 10;
@@ -18,7 +18,7 @@ namespace CSMaze
 		public static ControlPanel controlPanel = null;
 		public static DisplayPanel displayPanel = null;
 
-		public MazeGlobal()
+		public GlobalData()
 		{
 
 		}

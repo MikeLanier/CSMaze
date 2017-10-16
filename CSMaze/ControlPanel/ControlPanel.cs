@@ -6,8 +6,8 @@ namespace CSMaze
 	{
 		public ControlPanel()
 		{
-			Width = MazeGlobal.controlPanelWidth;
-			Height = MazeGlobal.controlPanelHeight;
+			Width = GlobalData.controlPanelWidth;
+			Height = GlobalData.controlPanelHeight;
 
 			int xOffset = 10;
 			int yOffset = 10;
@@ -17,7 +17,7 @@ namespace CSMaze
 
 			int buffer = 5;
 
-			int width = MazeGlobal.controlPanelWidth;
+			int width = GlobalData.controlPanelWidth;
 			int height = 25;
 
 			Controls.Add(new ControlPanelLoad(x, y, width, height, buffer));

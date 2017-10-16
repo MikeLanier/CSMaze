@@ -45,7 +45,7 @@ namespace CSMaze
 
 		public int ID()
 		{
-			return MazeGlobal.ID(xOrigin, yOrigin, horizontal);
+			return GlobalData.ID(xOrigin, yOrigin, horizontal);
 		}
 
 		public void draw(Graphics gc, int xOffset, int yOffset, int cellSize)

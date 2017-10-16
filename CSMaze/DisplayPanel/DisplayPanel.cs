@@ -30,7 +30,7 @@ namespace CSMaze
 		{
 			foreach (MazeWall wall in walls.Values)
 			{
-				wall.draw(g, 350, 50, MazeGlobal.cellSize);
+				wall.draw(g, 350, 50, GlobalData.cellSize);
 			}
 		}
 	}
